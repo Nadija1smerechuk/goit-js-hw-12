@@ -36,8 +36,8 @@ async function handleSearch(evt) {
   currentQuery = queryValue;
   currentPage = 1;
   clearGallery();
-  // toggleLoader(true);
-  // toggleLoadMoreBtn(false);
+  // лодер активний
+  hide(hiddenClass);
   
   try {
     const data = await getPicturesByQuery(queryValue, currentPage);
@@ -72,7 +72,7 @@ loadMoreBtn.addEventListener('click', loadMoreImages);
 async function loadMoreImages() {
   currentPage += 1;
   // лодер видимий
-  hide(hiddenClass);
+  // кнопка неактивна
 
   try {
     const data = await getPicturesByQuery(currentQuery, currentPage);
