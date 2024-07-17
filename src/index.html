@@ -5,10 +5,26 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <load ="partials/header.html" />
+<div class="container">
+  <form class="form" id="search-form">
+    <div class="form-group">
+      <input type="text" class="form-control" name="query" id="search-input" placeholder="Search images" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+  
+  
+  <div id="gallery" class="gallery"></div>
+  <button type="button" id="load-more" class="load-more hidden">Load more</button>
+  <div id="loader" class="loader hidden"></div>
+</div>
 
     <script type="module" src="./main.js"></script>
   </body>
+
 </html>
