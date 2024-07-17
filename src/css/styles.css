@@ -1,12 +1,4 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css'); */
+
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -62,9 +54,6 @@ img {
   margin: 20px 0;
 }
 
-.hidden {
-  display: none;
-}
 
 
 
@@ -75,7 +64,9 @@ img {
   border-radius: 50%;
   color: #FF3D00;
   animation: fill 1s ease-in infinite alternate;
+  left: 50%;
 }
+
 
 
 .loader::before,
@@ -148,14 +139,12 @@ img {
 
 
 
-/* button.load-more{
-  visibility: hidden;
-} */
 
-.button.is-hidden {
+
+.is-hidden {
   display: none;
 }
 
-.button>.spinner.is-hidden {
+.button>.loader.is-hidden {
   display: none;
-}
+} 
